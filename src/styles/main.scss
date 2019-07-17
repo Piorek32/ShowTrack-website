@@ -1,3 +1,193 @@
 body {
-    background: black;
+   margin: 0; 
 }
+header {
+    padding: 0 100px;
+    background-color: #FFFFFF;
+    z-index: 99;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav {}
+
+.nav-ul {
+    li {
+        margin: 0 20px;
+        display: inline;
+        list-style: none;
+        a {
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+}
+
+.login-box {
+    a {
+        margin: 0 10px;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+        color: black
+    }
+    button {
+        box-shadow: #FFFFFF 16%;
+        border-radius: 5%;
+        font-size: 14px;
+        height: 32px;
+        border: none;
+        color: #FFFFFF;
+        background-color: #540CFA;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    }
+}
+
+//hero/////////////////////////
+.hero {
+    z-index: -2;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    
+}
+.rectangleRight1 {
+    z-index: -1;
+    position: absolute;
+    max-width: 600px;
+    height: auto;
+    top: -45%;
+    right: -16%;
+
+}
+.rectangleRight2 {
+    z-index: -2;
+    position: absolute;
+    max-width: 600px;
+    height: auto;
+    top: -41%;
+    right: -17%;
+}
+.rectangleLeft {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 65%;
+    left: -10%;
+
+}
+
+.iphone {
+    top: -50px;
+    width: auto;
+    max-height: 700px;
+    position: absolute;
+    right: 5%;
+}
+
+
+.container {
+    width: 1140px;
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: 50%;
+    grid-gap: 20px;
+}
+.titel {
+    font-size: 70px;
+    font-weight: 900;
+}
+.heroInput {
+
+
+    input {
+        height: 53px;
+        width: 350px;
+        border: 0px;
+        border: 1px solid  rgba(1, 3, 2, 0.5) !important;
+    }
+    button {
+        height: 53px;
+        width: 120px;
+        border-radius: 5%;
+        font-size: 16px;
+       
+        border: none;
+        color: #FFFFFF;
+        background-color: #540CFA;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    }
+
+}
+.heroText {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+}
+.servicesBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heroServices {
+    color: #B1B1B1;
+
+}
+
+
+///Features////
+ .FeaturesSection {
+     width: 1140px;
+     margin: 0 auto;
+     margin-top: -320px;
+        .topConteiner {
+            margin: 0 auto;
+            text-align: center;
+            width: 600px;
+
+
+            p {
+                color: #B1B1B1;
+                font-size: 18px;
+            }
+            .titel {
+                display: block;
+                font-size: 60px;
+                font-weight: 900;
+                margin-bottom: 25px;
+            }
+            .FeaturesText {
+                font-weight: 300;
+                color: #B1B1B1;
+                display: block;
+                font-size: 21px;
+            }
+        }
+ }
+
+
+
+ @media only screen and (max-width: 1500px) {
+     .iphone {
+         max-height: 500px;
+     }
+
+    }
+     @media only screen and (max-width: 1000px) {
+    .iphone {
+        max-height: 400px;
+    }
+
+   }
